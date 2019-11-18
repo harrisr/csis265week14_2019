@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using log4net;
-
+using Csis265.Domain;
 
 namespace csis265week11
 {
@@ -36,6 +36,7 @@ namespace csis265week11
 
             logger.Debug("YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!");
 
+            /*
             TestConnectionString();
             //TestInsert();
             TestSelect();
@@ -43,6 +44,7 @@ namespace csis265week11
             TestSelect();
             TestDelete();
             TestSelect();
+            */
         }
 
 
@@ -195,6 +197,29 @@ namespace csis265week11
 
         }
 
-
+        protected void btnSubmit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lblMessage.Text = string.Empty;
+                string genreName = txtGenre.Text;
+                Genre temp = new Genre(-1, genreName, DateTime.Now);
+                lblMessage.Text = temp.ToString();
+                lblMessage.ForeColor = System.Drawing.Color.Green;
+                logger.Debug($"GENRE: {temp.ToString()}");
+            }
+            catch (LibraryException lex)
+            {
+                lblMessage.Text = lex.Message;
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                logger.Error(lex);
+            }
+            catch(Exception ex)
+            {
+                lblMessage.Text = ex.Message;
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                logger.Error(ex);
+            }
+        }
     }
 }

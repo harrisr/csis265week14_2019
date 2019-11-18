@@ -227,7 +227,12 @@
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Csis265.Domain\Csis265.Domain.csproj">
+      <Project>{5a3c1e90-dc03-4f9a-bf04-078389b5c3e2}</Project>
+      <Name>Csis265.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
