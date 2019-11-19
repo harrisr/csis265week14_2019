@@ -45,6 +45,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AuthorDAO.cs" />
+    <Compile Include="AuthorMapper.cs" />
     <Compile Include="BaseDAO.cs" />
     <Compile Include="BaseMapper.cs" />
     <Compile Include="DALException.cs" />

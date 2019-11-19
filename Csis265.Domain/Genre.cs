@@ -10,6 +10,18 @@ namespace Csis265.Domain
     {
         protected string name;
 
+        public int Id
+        {
+            get { return id; }
+            set { id = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
         public Genre(int id, string name, DateTime dateCreated)
             : base(id, dateCreated)
         {

@@ -12,6 +12,10 @@
         <asp:TextBox ID="txtGenre" runat="server"></asp:TextBox>
     </p>
     <p>
+        <asp:DropDownList ID="drpGenres" runat="server">
+        </asp:DropDownList>
+    </p>
+    <p>
         <asp:Button ID="btnSubmit" runat="server" CausesValidation="False" OnClick="btnSubmit_Click" Text="Submit" />
     </p>
 </asp:Content>

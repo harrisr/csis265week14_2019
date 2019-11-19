@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using log4net;
 using Csis265.Domain;
+using Csis265.DAL;
 
 namespace csis265week11
 {
@@ -36,6 +37,8 @@ namespace csis265week11
 
             logger.Debug("YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!");
 
+            PopulateGenreDropdown();
+
             /*
             TestConnectionString();
             //TestInsert();
@@ -47,7 +50,18 @@ namespace csis265week11
             */
         }
 
+        private void PopulateGenreDropdown()
+        {
+            GenreDAO dao = new GenreDAO("localhost");
+            IList<object> genres = dao.SelectManyObjects(new Genre(-1, "%", DateTime.Now));
 
+            drpGenres.DataSource = genres;
+            drpGenres.DataValueField = "Id";
+            drpGenres.DataTextField = "Name";
+            drpGenres.DataBind();
+
+            //throw new NotImplementedException();
+        }
 
         private void TestConnectionString()
         {

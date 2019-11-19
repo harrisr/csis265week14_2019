@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.Domain", "Csis265.D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.DAL", "Csis265.DAL\Csis265.DAL.csproj", "{09523402-2A35-4BC2-8B58-C67D7AFE111B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.Console", "Csis265.Console\Csis265.Console.csproj", "{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{09523402-2A35-4BC2-8B58-C67D7AFE111B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09523402-2A35-4BC2-8B58-C67D7AFE111B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09523402-2A35-4BC2-8B58-C67D7AFE111B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

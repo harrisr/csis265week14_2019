@@ -49,6 +49,15 @@ namespace csis265week11 {
         protected global::System.Web.UI.WebControls.TextBox txtGenre;
         
         /// <summary>
+        /// drpGenres control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList drpGenres;
+        
+        /// <summary>
         /// btnSubmit control.
         /// </summary>
         /// <remarks>
