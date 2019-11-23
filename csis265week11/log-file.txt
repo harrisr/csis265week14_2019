@@ -91,3 +91,17 @@
 2019-11-14 22:04:12,008 [7] DEBUG csis265week11.Library 35 - CONN STRING: Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=c:\vsprojects\csis265week11_2019\csis265week11\App_Data\csis265db.mdf;Integrated Security=True
 2019-11-14 22:04:12,008 [7] DEBUG csis265week11.Library 37 - YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!
 2019-11-14 22:04:12,010 [7] DEBUG csis265week11.Library 209 - GENRE: GENRE:  ID: -1  NM: Western  DTC: 11/14/2019 10:04:12 PM
+2019-11-22 21:17:13,764 [8] DEBUG csis265week11.Library 35 - CONN STRING: Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=c:\vsprojects\csis265week11_2019\csis265week11\App_Data\csis265db.mdf;Integrated Security=True
+2019-11-22 21:17:13,795 [8] DEBUG csis265week11.Library 37 - YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!
+2019-11-22 21:17:19,263 [10] DEBUG csis265week11.Library 35 - CONN STRING: Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=c:\vsprojects\csis265week11_2019\csis265week11\App_Data\csis265db.mdf;Integrated Security=True
+2019-11-22 21:17:19,263 [10] DEBUG csis265week11.Library 37 - YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!
+2019-11-22 21:17:19,342 [10] ERROR csis265week11.Library 215 - Csis265.Domain.LibraryException: Genre name must not be blank
+   at Csis265.Domain.Genre.SetName(String name) in C:\VSProjects\csis265week11_2019\Csis265.Domain\Genre.cs:line 23
+   at Csis265.Domain.Genre..ctor(Int32 id, String name, DateTime dateCreated) in C:\VSProjects\csis265week11_2019\Csis265.Domain\Genre.cs:line 16
+   at csis265week11.Library.btnSubmit_Click(Object sender, EventArgs e) in C:\VSProjects\csis265week11_2019\csis265week11\Library.aspx.cs:line 206
+2019-11-22 21:17:20,889 [8] DEBUG csis265week11.Library 35 - CONN STRING: Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=c:\vsprojects\csis265week11_2019\csis265week11\App_Data\csis265db.mdf;Integrated Security=True
+2019-11-22 21:17:20,889 [8] DEBUG csis265week11.Library 37 - YYYYYYYEEEEEEEEEEEEEE  HHHHHAAAAWWWWW  !!!!!!!
+2019-11-22 21:17:20,904 [8] ERROR csis265week11.Library 215 - Csis265.Domain.LibraryException: Genre name must not be blank
+   at Csis265.Domain.Genre.SetName(String name) in C:\VSProjects\csis265week11_2019\Csis265.Domain\Genre.cs:line 23
+   at Csis265.Domain.Genre..ctor(Int32 id, String name, DateTime dateCreated) in C:\VSProjects\csis265week11_2019\Csis265.Domain\Genre.cs:line 16
+   at csis265week11.Library.btnSubmit_Click(Object sender, EventArgs e) in C:\VSProjects\csis265week11_2019\csis265week11\Library.aspx.cs:line 206
