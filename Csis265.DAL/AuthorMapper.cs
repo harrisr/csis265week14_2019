@@ -15,7 +15,7 @@ namespace Csis265.DAL
 
         public override object DoMapping()
         {
-            logger.Debug("INSIDE AuthorMapper DoMapping() !!!");
+            //logger.Debug("INSIDE AuthorMapper DoMapping() !!!");
 
             int id = GetInteger("id");
             string name = GetString("name");
@@ -23,7 +23,7 @@ namespace Csis265.DAL
             DateTime dateCreated = GetDateTime("date_created");
 
             Author rtnObj = new Author(id, name, emailAddress, dateCreated);
-            logger.Debug($"INSIDE AuthorMapper DoMapping() {rtnObj.ToString()}");
+            //logger.Debug($"INSIDE AuthorMapper DoMapping() {rtnObj.ToString()}");
 
             return rtnObj;
             //throw new NotImplementedException();

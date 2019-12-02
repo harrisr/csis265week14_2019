@@ -113,6 +113,8 @@
     <Content Include="App_Data\csis265db_log.ldf">
       <DependentUpon>csis265db.mdf</DependentUpon>
     </Content>
+    <Content Include="Authors.aspx" />
+    <Content Include="Books.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -135,7 +137,7 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="Library.aspx" />
+    <Content Include="Genres.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -180,6 +182,20 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Authors.aspx.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Authors.aspx.designer.cs">
+      <DependentUpon>Authors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Books.aspx.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Books.aspx.designer.cs">
+      <DependentUpon>Books.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -197,12 +213,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Library.aspx.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
+    <Compile Include="Genres.aspx.cs">
+      <DependentUpon>Genres.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Library.aspx.designer.cs">
-      <DependentUpon>Library.aspx</DependentUpon>
+    <Compile Include="Genres.aspx.designer.cs">
+      <DependentUpon>Genres.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -228,6 +244,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Csis265.BL\Csis265.BL.csproj">
+      <Project>{c158e58d-f85e-4d71-b881-b83ec837aae4}</Project>
+      <Name>Csis265.BL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Csis265.DAL\Csis265.DAL.csproj">
       <Project>{09523402-2a35-4bc2-8b58-c67d7afe111b}</Project>
       <Name>Csis265.DAL</Name>

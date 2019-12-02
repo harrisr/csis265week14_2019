@@ -49,6 +49,8 @@
     <Compile Include="AuthorMapper.cs" />
     <Compile Include="BaseDAO.cs" />
     <Compile Include="BaseMapper.cs" />
+    <Compile Include="BookDAO.cs" />
+    <Compile Include="BookMapper.cs" />
     <Compile Include="DALException.cs" />
     <Compile Include="GenreDAO.cs" />
     <Compile Include="GenreMapper.cs" />

@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.DAL", "Csis265.DAL\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.Console", "Csis265.Console\Csis265.Console.csproj", "{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Csis265.BL", "Csis265.BL\Csis265.BL.csproj", "{C158E58D-F85E-4D71-B881-B83EC837AAE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CADF0E5F-19F8-45C0-B8F6-64DC3CEC531A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C158E58D-F85E-4D71-B881-B83EC837AAE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C158E58D-F85E-4D71-B881-B83EC837AAE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C158E58D-F85E-4D71-B881-B83EC837AAE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C158E58D-F85E-4D71-B881-B83EC837AAE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

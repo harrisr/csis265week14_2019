@@ -20,7 +20,7 @@ namespace Csis265.DAL
         {
             log4net.Config.XmlConfigurator.Configure();
             this.rdr = rdr;
-            logger.Debug("INSIDE BaseMapper() CONSTRUCTOR!!!");
+            //logger.Debug("INSIDE BaseMapper() CONSTRUCTOR!!!");
         }
 
         public abstract object DoMapping();
@@ -29,7 +29,7 @@ namespace Csis265.DAL
         {
             try
             {
-                logger.Debug("INSIDE MAPPING GetInteger()");
+                //logger.Debug("INSIDE MAPPING GetInteger()");
 
                 return Convert.ToInt32(rdr[columnName].ToString());
             }
@@ -46,7 +46,7 @@ namespace Csis265.DAL
         {
             try
             {
-                logger.Debug("INSIDE MAPPING GetString()");
+                //logger.Debug("INSIDE MAPPING GetString()");
 
                 return rdr[columnName].ToString();
             }
@@ -61,7 +61,7 @@ namespace Csis265.DAL
         {
             try
             {
-                logger.Debug("INSIDE MAPPING GetDateTime()");
+                //logger.Debug("INSIDE MAPPING GetDateTime()");
 
                 return Convert.ToDateTime(rdr[columnName].ToString());
             }

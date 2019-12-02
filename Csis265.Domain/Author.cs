@@ -8,8 +8,34 @@ namespace Csis265.Domain
 {
     public class Author : BaseObject
     {
+        #region PUBLIC PROPERTIES
+
+        public int Id
+        {
+            get { return id; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Email
+        {
+            get { return emailAddress; }
+        }
+
+        #endregion
+
+        #region PROTECTED MEMBER VARIBLES
+
         protected string name;
         protected string emailAddress;
+
+        #endregion
+
+        #region CONSTRUCTORS
 
         public Author(int id, string name, string emailAddress, DateTime dateCreated)
             : base(id, dateCreated)
@@ -17,6 +43,10 @@ namespace Csis265.Domain
             SetName(name);
             SetEmailAddress(emailAddress);
         }
+
+        #endregion
+
+        #region SETTERS / MUTATORS
 
         public void SetEmailAddress(string emailAddress)
         {
@@ -31,6 +61,10 @@ namespace Csis265.Domain
             }
             this.name = name;
         }
+
+        #endregion
+
+        #region GETTERS / ACCESSORS
 
         public string GetName()
         {
@@ -47,5 +81,7 @@ namespace Csis265.Domain
             return $"AUTHOR:  ID: {id}  NM: {name}   EM: {emailAddress}  DTC: {dateCreated}";
             //return base.ToString();)
         }
+
+        #endregion 
     }
 }

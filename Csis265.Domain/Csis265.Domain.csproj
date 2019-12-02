@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Author.cs" />
     <Compile Include="BaseObject.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="Genre.cs" />
     <Compile Include="LibraryException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
